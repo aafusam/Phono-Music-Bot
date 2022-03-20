@@ -36,11 +36,11 @@ async def start(client,message):
         InlineKeyboardButton(
             text="Movies Group",
             url="https://t.me/+f6dvEmEpKAwwODM1"),
-        InlineKeyboardButton(text="Help",callback_data="helphome")
+        InlineKeyboardButton(text="Developer",
+            url="https://t.me/AafuSam013"),
         ],
         [
-            InlineKeyboardButton(text="Developer",
-            url="https://t.me/AafuSam013"),
+            InlineKeyboardButton(text="Help",callback_data="helphome")
         ]]
     if LOG_GROUP:
 
