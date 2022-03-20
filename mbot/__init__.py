@@ -74,7 +74,7 @@ class Mbot(Client):
         if not path.exists('/tmp/thumbnails/'):
             mkdir('/tmp/thumbnails/')
         for chat in AUTH_CHATS:
-            await self.send_photo(chat,"https://i.ibb.co/mtGCrzm/youNeedMusic.jpg","**Bot Started.**")
+            await self.send_photo(chat,"https://te.legra.ph/file/293594e69502b9c38455a.jpg","**Bot Started.**")
         LOGGER.info(f"Bot Started As {BOT_INFO.username}\n")
     
     async def stop(self,*args):
