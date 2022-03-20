@@ -1,14 +1,14 @@
 {
-  "name": "You Need Music",
+  "name": "Phono-Music-Bot",
   "description": "A simple Telegram bot to download music.",
   "keywords": [
     "bot",
     "music",
     "music downloader"
   ],
-  "repository": "https://github.com/rozari0/NeedMusicRobot/",
-  "website": "https://t.me/NeedMusicRobot",
-  "success_url": "https://t.me/NeedMusicRobot",
+  "repository": "https://github.com/aafusam/Phono-Music-Bot/",
+  "website": "https://t.me/PhonoMusicRobot",
+  "success_url": "https://t.me/NeedMusicbot",
   "env": {
     "API_ID": {
       "description": "Your Telegram API ID",
