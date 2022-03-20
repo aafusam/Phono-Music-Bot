@@ -3,12 +3,6 @@
 A Simple Music Downloader Bot For Telegram with Youtube Music And Spotify Support.
 
 
-
-## Demo
-
-[You Need Music?](https://t.me/NeedMusicRobot)
-
-
 ## Deployment
 
 To deploy this project run
@@ -27,7 +21,7 @@ To deploy this project run
   docker run musicbot
 ```
 ### Heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/rozari0/MusicDownloader/)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/aafusam/Phono-Music-Bot/)
 
 ### Railway
 May not work because this project required Ytdl.
