@@ -49,7 +49,7 @@ async def start(client,message):
     if message.chat.type != "private" and message.chat.id not in AUTH_CHATS and message.from_user.id not in SUDO_USERS:
         return await message.reply_text("This Bot Will Not Work In Groups Unless It's Authorized.",
                     reply_markup=InlineKeyboardMarkup(reply_markup))
-    return await message.reply_text(f"Hello {message.from_user.first_name}, I'm a Simple Music Downloader Bot. I Currently Support Download from Youtube.",
+    return await message.reply_text(f"👋Hello {message.from_user.first_name}, 🎧I'm A Simple Telegram Bot To Help You To Download Music From Many Platforms. Currently I Only Support YouTube, Spotify And Deezer!🎧",
                     reply_markup=InlineKeyboardMarkup(reply_markup))
 
 @Mbot.on_message(filters.command("restart") & filters.chat(OWNER_ID) & filters.private)
@@ -69,12 +69,12 @@ async def ping(client,message):
     await message.reply_text(f"**Pong!**\nResponse time: `{ms} ms`")
 
 HELP = {
-    "Youtube": "Send **Youtube** Link in Chat to Download Song.",
-    "Spotify": "Send **Spotify** Track/Playlist/Album/Show/Episode's Link. I'll Download It For You.",
-    "Deezer": "Send Deezer Playlist/Album/Track Link. I'll Download It For You.",
-    "Jiosaavn": "Not Implemented yet",
-    "SoundCloud": "Not Implemented yet",
-    "Group": "Will add later."
+    "Youtube": "Cool😉, Now Send Your **Youtube** Music/Video Link To Download",
+    "Spotify": "Cool😉, Now Send Your **Spotify** Track/Playlist/Album/Show/Episode's Link To Download",
+    "Deezer": "Cool😉, Now Send Your  **Deezer** Playlist/Album/Track Link To Download",
+    "Jiosaavn": "Sorry☹️, Currently Not Available",
+    "SoundCloud": "Sorry☹️, Currently Not Available",
+    "Support": "@AafuSam013"
 }
 
 
@@ -84,7 +84,7 @@ async def help(_,message):
         [InlineKeyboardButton(text=i, callback_data=f"help_{i}")] for i in HELP
     ]
 
-    await message.reply_text(f"Hello **{message.from_user.first_name}**, I'm **@NeedMusicRobot**.\nI'm Here to download your music.",
+    await message.reply_text(f"👋Hello **{message.from_user.first_name}**, I'm **@PhonoMusicBot**.\n📢Select Below Platforms From Which You Want To Download Music",
                         reply_markup=InlineKeyboardMarkup(button))
 
 @Mbot.on_callback_query(filters.regex(r"help_(.*?)"))
