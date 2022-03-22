@@ -6,3 +6,8 @@ requests
 asgiref
 deezer-python
 spotipy
+Flask
+gunicorn
+requests
+pyDes
+flask-cors
